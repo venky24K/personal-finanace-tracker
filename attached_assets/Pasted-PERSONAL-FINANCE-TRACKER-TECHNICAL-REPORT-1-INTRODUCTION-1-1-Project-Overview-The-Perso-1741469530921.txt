@@ -1,0 +1,135 @@
+PERSONAL FINANCE TRACKER   TECHNICAL REPORT
+
+   
+
+ 1. INTRODUCTION
+
+ 1.1 Project Overview
+
+The Personal Finance Tracker is a full stack web application designed to help users efficiently manage their finances with minimal manual input. The application provides features such as automated expense tracking via SMS/Email parsing, a simple one minute budget planner, subscription management, and AI driven spending insights.
+
+The key objective is to simplify financial tracking and present insights in an intuitive manner, making it easy for users to take control of their spending habits.
+
+ 1.2 Key Objectives
+
+  Automate expense tracking using SMS/Email parsing.
+  Provide a quick, AI driven budget planner.
+  Offer insights into spending habits with geolocation tracking.
+  Ensure ease of use with an intuitive UI.
+  Keep deployment simple and lightweight.
+
+   
+
+ 2. FEATURES
+
+ 2.1 Core Features
+
+ 2.1.1 Automated Expense Tracking
+
+ Extracts transaction details from bank SMS & emails automatically.
+ Uses regular expressions (Regex) to classify transactions.
+
+ 2.1.2 Quick Budget Planner
+
+  Users input income, savings goal, and spending categories.
+  System auto generates a budget plan based on simple calculations.
+
+ 2.1.3 Location Based Spending Insights
+
+  Uses GPS tracking to show spending habits in different locations.
+  Displays category wise expenses (e.g., “Spent 30% of monthly budget on dining”).
+
+ 2.1.4 Micro Saving Goals & Notifications
+
+  Allows users to set small saving goals (e.g., Save $100 this month).
+  Sends progress notifications (e.g., "You're $20 away from your goal!").
+
+ 2.1.5 WhatsApp/Telegram Bot Integration
+
+  Users can send expenses via WhatsApp or Telegram.
+  System auto updates expenses without manual input.
+
+ 2.1.6 Subscription & Bill Management
+
+  Detects recurring payments (Netflix, Spotify, etc.).
+  Suggests cheaper plans (e.g., Downgrade to Netflix Standard to save $5/month).
+
+ 2.1.7 Fraud Detection Alerts
+
+  Detects unusual transactions using simple anomaly detection.
+  Sends real time alerts for high value transactions.
+
+   
+
+ 3. SYSTEM ARCHITECTURE & TECH STACK
+
+ 3.1 Technology Stack
+
+
+
+
+ 3.2 System Architecture
+
+1. Frontend (React.js):
+     User authentication
+     Dashboard UI (charts, financial insights)
+     Expense entry form
+   
+2. Backend (Node.js + Express.js):
+     REST API for managing users, transactions, and budgets
+     Logic for SMS/email expense extraction
+     WebSocket for real time notifications
+   
+3. Database (MongoDB / PostgreSQL / AWS):
+     Stores user data, transactions, and budget details.
+     Uses indexes for fast retrieval of recent transactions.
+   
+   
+
+ 4. APPLICATION MODULES
+
+ 4.1 User Authentication
+  Signup/Login via Firebase/Auth0.
+  Secure JWT based authentication.
+
+ 4.2 Expense Management
+  Users can manually add, edit, and delete expenses.
+  Automated SMS/Email based expense detection.
+
+ 4.3 Budget & Savings
+  Quick budget planning tool.
+  Visual representation using graphs and charts.
+
+ 4.4 Notifications & Alerts
+  Custom spending alerts and fraud detection.
+  WhatsApp/Telegram integration for notifications.
+
+ 4.5 Reports & Insights
+  Monthly and yearly spending analysis.
+  Category wise expense breakdown.
+
+   
+
+ 5. DEPLOYMENT & DEVELOPMENT STRATEGY
+
+ 5.1 Development Strategy
+
+Frontend UI & Authentication (React.js + Firebase/Auth0)
+Backend API (Node.js + Express + MongoDB/PostgreSQL)
+Expense tracking with SMS/Email parsing
+Subscription & notifications module
+Testing & deployment
+
+ 5.2 Deployment Plan
+  Frontend Deployment: Vercel
+  Backend Deployment: Render
+  Database Hosting: MongoDB Atlas/PostgreSQL on AWS
+
+   
+
+ 6. CONCLUSION
+
+The Personal Finance Tracker is a lightweight yet novel full stack application designed to automate and simplify financial management. The system removes the need for manual tracking by integrating SMS, email, and chatbot based expense tracking. It provides an effortless budgeting experience, real time fraud detection, and a smart goal setting system. The project is deployable on Vercel & Render, making it scalable and easy to maintain.
+
+This project is a great addition to a developer portfolio, demonstrating skills in full stack development, API integration, and real world problem solving.
+
